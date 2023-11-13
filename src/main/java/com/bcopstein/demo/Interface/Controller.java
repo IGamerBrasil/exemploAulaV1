@@ -1,4 +1,4 @@
-package com.example.sistemaVendas.Interface;
+package com.bcopstein.demo.Interface;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.sistemaVendas.Aplicacao.ProdutosDisponiveis_UC;
-import com.example.sistemaVendas.Dominio.model.Produto;
+import com.bcopstein.demo.Aplicacao.ProdutosDisponiveis_UC;
+import com.bcopstein.demo.Dominio.model.Produto;
 
 @RestController
 public class Controller {

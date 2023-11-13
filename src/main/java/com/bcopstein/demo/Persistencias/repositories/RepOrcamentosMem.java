@@ -1,11 +1,11 @@
-package com.example.sistemaVendas.Persistencias.repositories;
+package com.bcopstein.demo.Persistencias.repositories;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.sistemaVendas.Dominio.interface_repositories.IRepOrcamentos;
-import com.example.sistemaVendas.Dominio.model.Orcamento;
+import com.bcopstein.demo.Dominio.interface_repositories.IRepOrcamentos;
+import com.bcopstein.demo.Dominio.model.Orcamento;
 
 @Repository
 public class RepOrcamentosMem implements IRepOrcamentos{

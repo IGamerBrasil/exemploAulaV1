@@ -1,9 +1,9 @@
-package com.example.sistemaVendas.Dominio.interface_repositories;
+package com.bcopstein.demo.Dominio.interface_repositories;
 
 import java.util.List;
 
-import com.example.sistemaVendas.Dominio.model.Pedido;
-import com.example.sistemaVendas.Dominio.model.ItemPedido;
+import com.bcopstein.demo.Dominio.model.Pedido;
+import com.bcopstein.demo.Dominio.model.ItemPedido;
 
 public interface IRepPedido {
 

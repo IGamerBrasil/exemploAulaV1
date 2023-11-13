@@ -1,4 +1,4 @@
-package com.example.sistemaVendas.Dominio.model;
+package com.bcopstein.demo.Dominio.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.sistemaVendas.Aplicacao;
+package com.bcopstein.demo.Aplicacao;
 
 public class EfetivarOrcamento {
     

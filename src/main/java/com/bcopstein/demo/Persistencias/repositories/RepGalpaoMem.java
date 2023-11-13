@@ -1,11 +1,11 @@
-package com.example.sistemaVendas.Persistencias.repositories;
+package com.bcopstein.demo.Persistencias.repositories;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.sistemaVendas.Dominio.interface_repositories.IRepGalpao;
-import com.example.sistemaVendas.Dominio.model.Produto;
+import com.bcopstein.demo.Dominio.interface_repositories.IRepGalpao;
+import com.bcopstein.demo.Dominio.model.Produto;
 
 @Repository
 public class RepGalpaoMem implements IRepGalpao{
