@@ -7,13 +7,15 @@ import org.springframework.stereotype.Repository;
 
 import com.bcopstein.demo.Dominio.interface_repositories.IRepGalpao;
 import com.bcopstein.demo.Dominio.model.Galpao;
+import com.bcopstein.demo.Dominio.model.ItemEstoque;
 import com.bcopstein.demo.Dominio.model.Produto;
 
 @Repository
 public class RepGalpaoMem implements IRepGalpao{
 
-    List<Galpao> galpoes;
+    private List<Galpao> galpoes;
 
+    private RepProdutosMem p;
 
     public RepGalpaoMem(){
         galpoes = new LinkedList<>();
@@ -22,11 +24,11 @@ public class RepGalpaoMem implements IRepGalpao{
     }
 
     @Override
-    public List<Produto> listAllProdutos(long idGalpao) {
-        List<Produto> list = new LinkedList<>();
+    public List<ItemEstoque> listAllItensEstoque(long idGalpao) {
+        List<ItemEstoque> list = new LinkedList<>();
         for (Galpao g : galpoes) {
             if(g.getId() == idGalpao){
-                g.
+                list.add(p.findById(g.getIdItem()));
             }
         }
         return list;
