@@ -6,7 +6,7 @@ import com.bcopstein.demo.Dominio.model.Produto;
 
 public interface IRepGalpao {
 
-    List<Produto> listAllProdutos();
+    List<Produto> listAllProdutos(long idGalpao);
     Produto findById(long id);
     
 }

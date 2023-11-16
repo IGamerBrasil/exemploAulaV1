@@ -15,9 +15,6 @@ public class Produto {
     private String descricao;
     private double precoUnit;
 
-    public Produto() {
-    }
-
     public Produto(long codigo, String descricao, double precoUnit) {
         this.codigo = codigo;
         this.descricao = descricao;

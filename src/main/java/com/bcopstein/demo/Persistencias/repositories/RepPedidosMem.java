@@ -1,5 +1,6 @@
 package com.bcopstein.demo.Persistencias.repositories;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -10,6 +11,13 @@ import com.bcopstein.demo.Dominio.model.Pedido;
 
 @Repository
 public class RepPedidosMem implements IRepPedido{
+
+    private List<Pedido> pedidos;
+
+    public RepPedidosMem(){
+        pedidos = new LinkedList<>();
+        pedidos.add(new Pedido(10, ))
+    }
 
     @Override
     public List<Pedido> all() {

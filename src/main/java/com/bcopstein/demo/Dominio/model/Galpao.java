@@ -14,6 +14,12 @@ public class Galpao {
     private long idItem;
     private int quantItem;
 
+    public Galpao(long id, long idItem, int quantItem){
+        this.id = id;
+        this.idItem = idItem;
+        this.quantItem = quantItem;
+    }
+
     public long getId() {
         return id;
     }

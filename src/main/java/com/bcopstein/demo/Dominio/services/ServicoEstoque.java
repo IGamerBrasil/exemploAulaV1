@@ -5,19 +5,23 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bcopstein.demo.Dominio.interface_repositories.IRepProdutos;
 import com.bcopstein.demo.Dominio.model.Produto;
+import com.bcopstein.demo.Persistencias.repositories.RepProdutosMem;
 
 @Service
 public class ServicoEstoque{
-    private IRepProdutos produtosRep;
+    private RepProdutosMem produtosRep;
 
     @Autowired
-    public ServicoEstoque(IRepProdutos produtosRep){
+    public ServicoEstoque(RepProdutosMem produtosRep){
         this.produtosRep = produtosRep;
     }
 
     public List<Produto> produtosDisponiveis(){
         return produtosRep.all();
+    }
+
+    public Produto findProdById(long id){
+        return produtosRep.findById(id);
     }
 }
